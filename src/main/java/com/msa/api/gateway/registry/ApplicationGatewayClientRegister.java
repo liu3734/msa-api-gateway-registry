@@ -93,7 +93,7 @@ public class ApplicationGatewayClientRegister implements EnvironmentAware, Initi
         }
         try {
             String host = InetAddress.getLocalHost().getHostAddress();
-            String hostAndPort = host + ":" + port;
+            String hostAndPort = ":=" + host + ":" + port;
             zkClient.createEphemeralSequential(appNode + "/address-", hostAndPort);
         } catch (UnknownHostException e) {
             throw new IllegalStateException("get host address error");

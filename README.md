@@ -22,3 +22,4 @@ public class Rpc4jClientSampleApplication {
 	}
 }
 ```
+Test
